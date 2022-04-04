@@ -105,6 +105,7 @@ with open('1001101aba.txt', 'w') as f:
     f.close()
 
 #opening data from file
+
 def convert_str_to_list(file):
     with open(file) as f:
         line00 = f.readlines()
