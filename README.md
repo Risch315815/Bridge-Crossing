@@ -104,7 +104,7 @@
         f.write(str(final_result))
         f.close()
 
-    #opening data from file
+#opening data from file
 
     def convert_str_to_list(file):
         with open(file) as f:
