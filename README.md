@@ -137,3 +137,4 @@
   with open ('all_popssible_route002.txt', 'w') as f:
       f.write(str(finfinlist))
       f.close()
+ 
