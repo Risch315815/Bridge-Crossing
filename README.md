@@ -100,33 +100,33 @@
                                                                 continue
 #data processing
 
-            workingList = final_result
-            def compare_item_length(lista):
-                final_res = []
-                for i in lista:
-                    #print(i)
-                    temp_route1 = i
-                    temp_route2 = i
-                    for j in lista:
-                        if temp_route1[0:3] == j[0:3]:
-                            if len(temp_route1) < len(j):
-                                temp_route1 = j
-                                temp_route2 = j
-                            elif len(temp_route1) == len(j):
-                                temp_route2 = j
-                            else:
-                                continue
-                    if temp_route1 == temp_route2:
-                        final_res.append(temp_route1)
+    workingList = final_result
+    def compare_item_length(lista):
+        final_res = []
+        for i in lista:
+            #print(i)
+            temp_route1 = i
+            temp_route2 = i
+            for j in lista:
+                if temp_route1[0:3] == j[0:3]:
+                    if len(temp_route1) < len(j):
+                        temp_route1 = j
+                        temp_route2 = j
+                    elif len(temp_route1) == len(j):
+                        temp_route2 = j
                     else:
-                        final_res.append(temp_route1)
-                        final_res.append(temp_route2)
+                        continue
+            if temp_route1 == temp_route2:
+                final_res.append(temp_route1)
+            else:
+                final_res.append(temp_route1)
+                final_res.append(temp_route2)
 
-                print(final_res)
-                print(type(final_res))
-                finlist = [list(x) for x in {(tuple(e)) for e in final_res}]
-                print(finlist)
-                return finlist
+        print(final_res)
+        print(type(final_res))
+        finlist = [list(x) for x in {(tuple(e)) for e in final_res}]
+        print(finlist)
+        return finlist
 
         print(compare_item_length(workingList))
         finfinlist = []
