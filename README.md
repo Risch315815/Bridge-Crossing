@@ -2,6 +2,8 @@
 #solving the konigsberg bridge problem by listing every possible route
     final_result = []
 
+#defining symbols for bridge crossing
+
     def bridge_crossing_rule(list):
         possible_path = []
         if list[-1] == 11:
@@ -33,6 +35,8 @@
         elif list[-1] == 72:
             possible_path = [12,22]
         return possible_path
+
+#checking if path had been repeated
 
     def check_repeat(list):
         repeat_check = []
